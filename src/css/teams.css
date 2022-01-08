@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Righteous&display=swap");
+:root {
+  --blue: #042c9d;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  background-color: var(--blue);
+}
+
+body {
+  background: #eaecee;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  position: relative;
+}
+/* Search Box */
+#search-box {
+  background-color: white;
+  margin-right: 60px;
+  padding: 5px 10px;
+  position: relative;
+}
+
+#search-text {
+  outline: none;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+}
+.search-drop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 101%;
+  left: 0.2px;
+  width: 214px;
+  background-color: white;
+  cursor: pointer;
+  color: var(--blue);
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  align-items: center;
+  border-radius: 2px;
+}
+
+/* Creat Team and Player Modal */
+label {
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--blue);
+  margin-top: 1vh;
+}
+.player-fields {
+  width: 100%;
+  height: 4vh;
+  margin-top: 1vh;
+  padding-left: 5px;
+  font-size: 12px;
+  opacity: 0.5;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--blue);
+}
+.submit-btn {
+  font-size: 16px;
+  outline: none;
+  border: 2px solid var(--blue);
+  padding: 7px 10px;
+  background-color: white;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 20px;
+}
+.close {
+  font-size: 16px;
+  outline: none;
+  border: 2px solid #b20000;
+  padding: 7px 10px;
+  background-color: white;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.close:hover {
+  background-color: #b20000;
+  color: white;
+  border-radius: 20px;
+}
+
+/* Title */
+#h3-title {
+  font-family: "Righteous", cursive;
+  font-size: 2.5rem;
+  color: #c70039;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 5vh;
+}
+
+/* All Teams*/
+.access-teams {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+}
+.img-team {
+  width: 255px;
+  height: 180px;
+  border-radius: 2px;
+}
+.card-team {
+  background-color: rgb(232, 228, 252);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px blue;
+  transition: all 200ms ease;
+}
+.card-team:hover {
+  background-color: rgb(221, 217, 236);
+  border: 1px dotted #ef4123;
+  box-shadow: 0 0 10px #ef4123;
+}
+.name-team {
+  font-weight: 600;
+  color: rgb(94, 13, 13);
+  text-align: center;
+}
+.cham-team {
+  font-weight: 600;
+  color: rgb(7, 92, 5);
+  text-align: center;
+}
+.play-team {
+  font-weight: 600;
+  color: rgb(116, 3, 3);
+  text-align: center;
+}
+/* Footer */
+footer {
+  background-color: var(--blue);
+  color: #eaecee;
+  width: 100%;
+  padding: 1%;
+}
+footer > p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 30px;
+}

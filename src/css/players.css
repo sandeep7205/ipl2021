@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Righteous&display=swap");
+:root {
+  --blue: #042c9d;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* Navigation bar */
+.navbar {
+  background-color: var(--blue);
+}
+/* Body */
+body {
+  background: #eaecee;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  position: relative;
+}
+/* Search Box */
+#search-box {
+  background-color: white;
+  margin-right: 60px;
+  padding: 5px 10px;
+  position: relative;
+}
+#search-text {
+  outline: none;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+}
+.search-drop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 101%;
+  left: 0.2px;
+  width: 214px;
+  background-color: white;
+  cursor: pointer;
+  color: var(--blue);
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  align-items: center;
+  border-radius: 2px;
+}
+/* Creat Team and Player Modal */
+label {
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--blue);
+  margin-top: 1vh;
+}
+
+.player-fields {
+  width: 100%;
+  height: 4vh;
+  margin-top: 1vh;
+  padding-left: 5px;
+  font-size: 12px;
+  opacity: 0.5;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--blue);
+}
+
+.submit-btn {
+  font-size: 16px;
+  outline: none;
+  border: 2px solid var(--blue);
+  padding: 7px 10px;
+  background-color: white;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 20px;
+}
+.close {
+  font-size: 16px;
+  outline: none;
+  border: 2px solid #b20000;
+  padding: 7px 10px;
+  background-color: white;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.close:hover {
+  background-color: #b20000;
+  color: white;
+  border-radius: 20px;
+}
+/* Team's and All Players */
+/* About Team */
+#team-container {
+  width: 100%;
+  padding: 70px 90px 0px 90px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.team-logo-container {
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.team-logo {
+  width: 250px;
+  height: 250px;
+  background-color: black;
+  border: 5px solid #ef4123;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px black;
+  display: block;
+}
+
+.team-name {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(8, 8, 8);
+  /* text-align: center; */
+  width: 100%;
+}
+
+span {
+  color: blue;
+  font-size: 21px;
+}
+
+#h3-title {
+  /* font-family: "Gruppo", cursive; */
+  font-family: "Righteous", cursive;
+  font-size: 2.5rem;
+  color: #c70039;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 5vh;
+}
+/* About Players */
+.player-img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+#team-players {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.card-absolute {
+  border: 1px dotted rgb(0, 0, 255);
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgb(255, 123, 0);
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.card-absolute:hover {
+  border: 1px solid blue;
+  box-shadow: 0 0 10px black;
+}
+
+.player-name {
+  text-align: center;
+  font-weight: 600;
+  color: rgb(14, 0, 206);
+  text-transform: uppercase;
+}
+
+.player-container {
+  position: relative;
+}
+/* Best Batsman & Bowler */
+.best {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+  border: 2px solid rgb(113, 241, 109);
+  background-color: rgb(151, 0, 0);
+  padding: 0 5px 0 5px;
+}
+/*  Footer */
+footer {
+  background-color: var(--blue);
+  color: #eaecee;
+  width: 100%;
+  padding: 1%;
+}
+footer > p{
+  margin-top: 0; 
+    margin-bottom: 0;
+    padding-left: 30px ;
+}
+
+@media only screen and (max-width: 600px) {
+#team-container {
+      width: 100%;
+    padding: 70px 34px 0px 121px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-start;
+}
+}

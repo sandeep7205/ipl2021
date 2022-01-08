@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <title>IPL-2021</title>
+    <!-- Add logo/Icon to Title -->
+    <link rel="icon" href="./src/others/image/title_Logo.jpg" type="image/icon type" />
+    <link rel="stylesheet" href="./src/css/players.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./src/others/image/navbar_logo.png" alt="IPL" width="100" height="45"
+                    class="d-inline-block align-text-top nav-logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">All Teams</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Create
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-primary fw-bold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" href="#">Create a Team</a></li>
+                            <li><a class="dropdown-item text-primary fw-bold" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal_1" href="#">Create a Player</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="search-box">
+                    <i class="fas fa-search search-icon" aria-hidden="true"></i>
+                    <input type="text" name="search" placeholder="Search for Teams" value="" id="search-text" />
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Create Team Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="exampleModalLabel">Creat a Team</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+    
+                    <form id="form-2">
+                        <label>Team Name </label><br />
+                        <input type="text" name="search" placeholder="eg.- Chennai Super Kings... " value=""
+                            class="player-fields" id="n8" /><br />
+                        <label>Key Name </label><br />
+                        <input type="text" name="search" placeholder="eg.- CSK..." value="" class="player-fields"
+                            id="n9" /><br />
+                        <label>Championships Won </label>
+                        <input type="text" name="search" placeholder="Championship Number..." value="" class="player-fields"
+                            id="n10" /><br />
+                        <label>Team Logo </label><br />
+                        <input type="text" name="search" placeholder="Paste the URL here..." value="" class="player-fields"
+                            id="n11" /><br /><br />
+                        <!-- <input type="submit" name="submit" class="submit-btn" id="sub-2" /><br /> -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- <input type="submit" name="submit" class="submit-btn" id="sub-2" /><br /> -->
+                    <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" name="submit" class="btn btn-primary submit-btn" id="sub-1">Create Team</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Create Player Modal -->
+    <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="exampleModalLabel">Create a Player</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-1">
+                        <label>Name Of Player </label><br />
+                        <input type="text" name="search" placeholder="Full Name" value="" class="player-fields"
+                            id="n1" /><br />
+                        <label>Image Link </label><br />
+                        <input type="text" name="search1" placeholder="Paste URL here" value="" class="player-fields"
+                            id="n2" /><br />
+                        <label>Team </label><br />
+                        <input type="text" name="search3" placeholder="Team Name" value="" class="player-fields"
+                            id="n4" /><br />
+                        <label>Role </label><br />
+                        <input type="text" name="search4" placeholder="Batsman or Bolwer or All Rounder" value=""
+                            class="player-fields" id="n5" /><br />
+                        <label>Playing Status </label><br />
+                        <input type="text" name="search5" placeholder="Playing or Not Playing" value=""
+                            class="player-fields" id="n6" /><br />
+                        <label>Price </label><br />
+                        <input type="text" name="search6" placeholder="Price is Rs." value="" class="player-fields"
+                            id="n7" /><br /><br />
+                        <!-- <label>Player Description </label><br />
+                        <input type="text" name="search2" placeholder="About the Player" value="" class="player-fields"
+                            id="n3" /><br /> -->
+                    </form>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" name="submit" class="btn btn-primary submit-btn" id="sub-2">Create Player</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Read Team's all player  -->
+    <div id="team-container">
+        <div id="team-logo">
+        </div>
+            <div id="team-main">
+                
+        </div>
+        <div>
+            <h3 id="h3-title">players in the team</h3>
+            <div id="team-players">
+
+            </div>
+        </div>
+    </div>
+<!-- Footer -->
+    <footer>
+        <p>Copyright &copy <a href="https://www.iplt20.com/teams/men">IPL 2021</a></p>
+        
+    </footer>
+    <!-- <script src="./src/js/allTeamData.js"></script> -->
+    <script src="./src/js/players.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Righteous&display=swap");
+:root {
+  --blue: #042c9d;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  background-color: var(--blue);
+}
+
+body {
+  background: #eaecee;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  position: relative;
+}
+/* Search Box */
+#search-box {
+  background-color: white;
+  margin-right: 60px;
+  padding: 5px 10px;
+  position: relative;
+}
+
+#search-text {
+  outline: none;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+}
+.search-drop{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 101%;
+  left: .2px;
+  width: 214px;
+  background-color: white;
+  cursor: pointer;
+  color: var(--blue);
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  align-items: center;
+  border-radius: 2px;
+}
+
+/* Creat Team and Player Modal */ 
+label {
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--blue);
+  margin-top: 1vh;
+}
+.player-fields {
+  width: 100%;
+  height: 4vh;
+  margin-top: 1vh;
+  padding-left: 5px;
+  font-size: 12px;
+  opacity: 0.5;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--blue);
+}
+.submit-btn {
+  font-size: 16px;
+  outline: none;
+  border: 2px solid var(--blue);
+  padding: 7px 10px;
+  background-color: white;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 20px;
+}
+
+.close {
+  font-size: 16px;
+  outline: none;
+  border: 2px solid #b20000;
+  padding: 7px 10px;
+  background-color: white;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.close:hover {
+  background-color: #b20000;
+  color: white;
+  border-radius: 20px;
+}
+#h3-title{
+  font-family: "Righteous", cursive;
+  font-size: 2.5rem;
+  color: #C70039 ;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 5%;
+}
+/* Infomation About Player */
+#player-container-two {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 5%;
+}
+.players-img {
+  width: 350px;
+  height: 350px;
+  display: block;
+  border: 2px solid rgb(255, 0, 0);
+  margin-left: 20px;
+  margin-right: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.player-info {
+  font-size: 24px;
+  font-weight: 600;
+  color: #b90000;
+  text-transform: uppercase;
+}
+span {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(27, 0, 148);
+}
+/* Footer */
+footer {
+  background-color: var(--blue);
+  color: #eaecee;
+  width: 100%;
+  padding: 1%;
+}
+footer > p{
+  margin-top: 0; 
+    margin-bottom: 0;
+    padding-left: 30px ;
+}
+@media only screen and (max-width: 600px) {
+  #player-container-two {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+  .player-infocard{
+    margin-top: 5%;
+    justify-content: baseline;
+  }
+  #search-box {
+  background-color: white;
+  margin-right: 80vw;
+  padding: 5px 10px;
+  position: relative;
+}
+
+#search-text {
+  outline: none;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+}
+}
